@@ -1,0 +1,498 @@
+@charset "UTF-8";
+/* line 5, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+
+/* line 22, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 26, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q,
+blockquote {
+  quotes: none;
+}
+/* line 103, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, /home/slava/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "fontello";
+  src: url("../font/fontello.eot?16218589");
+  src: url("../font/fontello.eot?16218589#iefix") format("embedded-opentype"),
+    url("../font/fontello.woff?16218589") format("woff"),
+    url("../font/fontello.ttf?16218589") format("truetype"),
+    url("../font/fontello.svg?16218589#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: libre-franklin;
+}
+
+h1,
+h2,
+h3 {
+  font-family: brandon-grotesque;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  padding: 1.5em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .lnr-menu {
+  font-size: 1.6em;
+  padding: 0.7em;
+  font-weight: bold;
+  display: inline;
+  background-color: #6a813f;
+  color: white;
+}
+
+.nav-right {
+  display: flex;
+  font-size: 1em;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: -10em;
+}
+
+.nav-right div {
+  display: none;
+}
+
+.navbar .logo {
+  width: 9em;
+  padding: 1.2em;
+  height: 1.4em;
+}
+
+ul.breadcrumb {
+  margin: 1em auto;
+  padding-top: 2em;
+  font-family: brandon-grotesque;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 800;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: #6a813f;
+  content: "/\00a0";
+}
+
+.breadcrumb a {
+  color: #6a813f;
+}
+
+.breadcrumb .current {
+  color: #929292;
+}
+
+.content {
+  height: 100%;
+}
+
+.content-title {
+  color: #929292;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.content-title:after {
+  content: "";
+  width: 23%;
+  border-bottom: 2px solid #6a813f;
+  height: 2px;
+  opacity: 0.7;
+  display: block;
+}
+
+.content .content-text {
+  color: #929292;
+  font-size: 0.8em;
+  font-weight: 300;
+  line-height: 2em;
+  margin-top: 1em;
+  font-family: libre-franklin;
+}
+
+#content-right {
+  width: 100%;
+}
+
+.content .links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 3em;
+  margin-top: 1em;
+}
+
+.content .links a {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  line-height: 2em;
+  color: #929292;
+}
+
+.content .links span {
+  color: #6a813f;
+  margin-right: 0.5em;
+}
+
+.content .links-bottom {
+  border: 1px solid #929292;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.7em;
+  padding: 1em;
+  line-height: 2.2em;
+}
+
+.content .links-bottom li {
+  margin-right: 1em;
+}
+
+.content .links-bottom span {
+  color: #929292;
+  margin-right: 0.5em;
+}
+
+.content .links-bottom a {
+  color: #929292;
+  text-transform: uppercase;
+}
+
+.arrow {
+  display: none;
+  width: 2em;
+  height: 3em;
+}
+
+.content-bottom {
+  background-color: white;
+}
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-container {
+  padding-top: 1em;
+  margin-bottom: 5em;
+}
+
+.gallery-container h4 {
+  text-transform: uppercase;
+  border-bottom: 1px solid #6a813f;
+  width: 25%;
+  text-align: center;
+  margin: 1em auto;
+}
+
+.gallery-container .img {
+  width: 50%;
+  height: 13em;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-images span {
+  margin: 1em;
+  position: absolute;
+  color: #929292;
+  font-weight: bold;
+}
+
+.gallery-container .img-1 {
+  background-image: url("../images/Accent_chair_rev-600x600.jpg");
+}
+.gallery-container .img-2 {
+  background-image: url("../images/Accent-Environment-828x600.jpg");
+}
+.gallery-container .img-3 {
+  background-image: url("../images/Accent-Double-Stich-400x600.jpg");
+}
+.gallery-container .img-4 {
+  background-image: url("../images/Accent-Waterfall-Front-Edge-700x467.jpg");
+}
+.gallery-container .img-5 {
+  background-image: url("../images/Accent-Curved-Back-577x600.jpg");
+}
+.gallery-container .img-6 {
+  background-image: url("../images/Accent-Wood-Back-700x484.jpg");
+}
+.gallery-container .img-7 {
+  background-image: url("../images/Accent-Easy-Cleaning-400x600.jpg");
+}
+.gallery-container .img-8 {
+  background-image: url("../images/accent_install-900x600.jpg");
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 3em;
+    padding-top: 4em;
+    height: 80vh;
+  }
+  .nav-right div {
+    display: inline;
+    font-size: 1.2em;
+    padding: 1.2em;
+  }
+  .navbar .logo {
+    width: 18em;
+    height: 2.6em;
+  }
+  .navbar .lnr-menu {
+    padding: 1em;
+  }
+  .navbar .lnr-menu:before {
+    opacity: 0.5;
+  }
+  .content-main {
+    display: flex;
+    align-items: flex-end;
+  }
+  #content-right {
+    width: 45%;
+    height: 20em;
+  }
+  .content-title {
+    font-size: 2.2em;
+  }
+
+  .content-title:after {
+    top: 8.5em;
+    width: 11.5%;
+    left: 1.4em;
+  }
+  .content .links-bottom {
+    margin-top: 5em;
+    /* position: absolute;
+    bottom: 0; */
+    width: 80%;
+    margin: 0 3% 3% 3%;
+  }
+  .content .content-text {
+    font-size: 1em;
+    margin-top: 1.5em;
+  }
+
+  .content-bottom {
+    padding-top: 1em;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .gallery-container .img {
+    height: 24em;
+  }
+  .content .links a {
+    font-size: 1em;
+  }
+  .content .links {
+    height: 5em;
+  }
+  #level-logo {
+    width: 45%;
+  }
+  .arrow {
+    display: inline;
+    /* position: absolute;
+    bottom: 3em;
+    left: 2em; */
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-right {
+    margin-right: -25em;
+  }
+  #content-right {
+    height: 38em;
+  }
+  .content-main {
+    align-items: flex-start;
+    margin: 6em;
+  }
+  ul.breadcrumb {
+    font-size: 1.1em;
+  }
+  .content-title {
+    font-size: 2.8em;
+  }
+  .content-title:after {
+    left: 3.2em;
+    width: 6.8%;
+  }
+  #level-logo {
+    width: 25%;
+  }
+  .gallery-container .img {
+    width: 25%;
+  }
+  .gallery-container h4 {
+    font-size: 1.8em;
+    width: 7%;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+  }
+}
